@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7: Landing Page</title>
+    <style>
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=1200') center/cover no-repeat;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .cta-btn {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 28px;
+            text-decoration: none;
+            font-size: 18px;
+            border-radius: 5px;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #218838;
+        }
+
+        
+        .section {
+            padding: 60px 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+        }
+
+        
+        .services {
+            background-color: #f8f9fa;
+        }
+
+        .services ul {
+            list-style: square;
+            padding-left: 20px;
+            font-size: 18px;
+        }
+
+        .services li {
+            margin-bottom: 10px;
+        }
+
+        
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 500px;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            padding: 12px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+
+        .contact-form button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 28px;
+            }
+            .about-content {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    
+    <section class="hero">
+        <h1>Welcome to Our Platform</h1>
+        <p>We provide standard web solutions to grow your ideas and business.</p>
+        <a href="#contact" class="cta-btn">Get Started</a>
+    </section>
+
+    
+    <section class="section">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>We are a team dedicated to designing user-friendly, clean, and responsive web applications. Our mission is to make web design accessible and clean for all developers and clients.</p>
+            </div>
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500" alt="Team working together">
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="services">
+        <div class="section">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Web Design & UI/UX Development</li>
+                <li>Responsive Web Development</li>
+                <li>Frontend Code Optimization</li>
+                <li>Technical Consulting</li>
+            </ul>
+        </div>
+    </section>
+
+    
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form" action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+</body>
+</html>
